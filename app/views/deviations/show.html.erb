@@ -1,0 +1,38 @@
+<p>
+  <b>Etf:</b>
+  <%=h @deviation.etf %>
+</p>
+
+<p>
+  <b>Base:</b>
+  <%=h @deviation.base %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%=h @deviation.start %>
+</p>
+
+<p>
+  <b>Stop:</b>
+  <%=h @deviation.stop %>
+</p>
+
+<p>
+  <b>Base change:</b>
+  <%=h @deviation.base_change %>
+</p>
+
+<p>
+  <b>Etf change:</b>
+  <%=h @deviation.etf_change %>
+</p>
+
+<p>
+  <b>Degradation:</b>
+  <%=h @deviation.degradation %>
+</p>
+
+
+<%= link_to 'Edit', edit_deviation_path(@deviation) %> |
+<%= link_to 'Back', deviations_path %>

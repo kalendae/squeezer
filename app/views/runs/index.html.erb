@@ -1,0 +1,40 @@
+<h1>Listing runs</h1>
+
+<table>
+  <tr>
+    <th>Main</th>
+    <th>Opposite</th>
+    <th>Start</th>
+    <th>Stop</th>
+    <th>Main shares</th>
+    <th>Opposite shares</th>
+    <th>Main enter price</th>
+    <th>Opposite enter price</th>
+    <th>Main exit price</th>
+    <th>Opposite exit price</th>
+    <th>Gain</th>
+  </tr>
+
+<% @runs.each do |run| %>
+  <tr>
+    <td><%=h run.main %></td>
+    <td><%=h run.opposite %></td>
+    <td><%=h run.start %></td>
+    <td><%=h run.stop %></td>
+    <td><%=h run.main_shares %></td>
+    <td><%=h run.opposite_shares %></td>
+    <td><%=h run.main_enter_price %></td>
+    <td><%=h run.opposite_enter_price %></td>
+    <td><%=h run.main_exit_price %></td>
+    <td><%=h run.opposite_exit_price %></td>
+    <td><%=h run.gain %></td>
+    <td><%= link_to 'Show', run %></td>
+    <td><%= link_to 'Edit', edit_run_path(run) %></td>
+    <td><%= link_to 'Destroy', run, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New run', new_run_path %>

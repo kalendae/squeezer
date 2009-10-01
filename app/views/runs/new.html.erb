@@ -1,0 +1,55 @@
+<h1>New run</h1>
+
+<% form_for(@run) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :main %><br />
+    <%= f.text_field :main %>
+  </p>
+  <p>
+    <%= f.label :opposite %><br />
+    <%= f.text_field :opposite %>
+  </p>
+  <p>
+    <%= f.label :start %><br />
+    <%= f.datetime_select :start %>
+  </p>
+  <p>
+    <%= f.label :stop %><br />
+    <%= f.datetime_select :stop %>
+  </p>
+  <p>
+    <%= f.label :main_shares %><br />
+    <%= f.text_field :main_shares %>
+  </p>
+  <p>
+    <%= f.label :opposite_shares %><br />
+    <%= f.text_field :opposite_shares %>
+  </p>
+  <p>
+    <%= f.label :main_enter_price %><br />
+    <%= f.text_field :main_enter_price %>
+  </p>
+  <p>
+    <%= f.label :opposite_enter_price %><br />
+    <%= f.text_field :opposite_enter_price %>
+  </p>
+  <p>
+    <%= f.label :main_exit_price %><br />
+    <%= f.text_field :main_exit_price %>
+  </p>
+  <p>
+    <%= f.label :opposite_exit_price %><br />
+    <%= f.text_field :opposite_exit_price %>
+  </p>
+  <p>
+    <%= f.label :gain %><br />
+    <%= f.text_field :gain %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', runs_path %>

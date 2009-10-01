@@ -1,0 +1,28 @@
+<h1>Listing records</h1>
+
+<table>
+  <tr>
+    <th>Ticker</th>
+    <th>Trade date</th>
+    <th>Open</th>
+    <th>Close</th>
+    <th>Adj close</th>
+  </tr>
+
+<% @records.each do |record| %>
+  <tr>
+    <td><%=h record.ticker %></td>
+    <td><%=h record.trade_date %></td>
+    <td><%=h record.open %></td>
+    <td><%=h record.close %></td>
+    <td><%=h record.adj_close %></td>
+    <td><%= link_to 'Show', record %></td>
+    <td><%= link_to 'Edit', edit_record_path(record) %></td>
+    <td><%= link_to 'Destroy', record, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New record', new_record_path %>

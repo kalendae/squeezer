@@ -1,0 +1,22 @@
+login: &login
+  username: root
+  password:
+  adapter: mysql
+
+production:
+  database: squeezer
+  <<: *login
+
+staging:
+  database: squeezer_staging
+  <<: *login
+
+development:
+  database: squeezer
+  <<: *login
+
+test:
+  database: squeezer_test
+  <<: *login
+
+

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  etf: MyString
+  base: MyString
+  start: 2009-09-30 22:11:47
+  stop: 2009-09-30 22:11:47
+  base_change: 1.5
+  etf_change: 1.5
+  degradation: 1.5
+
+two:
+  etf: MyString
+  base: MyString
+  start: 2009-09-30 22:11:47
+  stop: 2009-09-30 22:11:47
+  base_change: 1.5
+  etf_change: 1.5
+  degradation: 1.5

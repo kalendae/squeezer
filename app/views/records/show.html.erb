@@ -1,0 +1,28 @@
+<p>
+  <b>Ticker:</b>
+  <%=h @record.ticker %>
+</p>
+
+<p>
+  <b>Trade date:</b>
+  <%=h @record.trade_date %>
+</p>
+
+<p>
+  <b>Open:</b>
+  <%=h @record.open %>
+</p>
+
+<p>
+  <b>Close:</b>
+  <%=h @record.close %>
+</p>
+
+<p>
+  <b>Adj close:</b>
+  <%=h @record.adj_close %>
+</p>
+
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>

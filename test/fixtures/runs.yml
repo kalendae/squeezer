@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  main: MyString
+  opposite: MyString
+  start: 2009-09-30 16:31:04
+  stop: 2009-09-30 16:31:04
+  main_shares: 1
+  opposite_shares: 1
+  main_enter_price: 1.5
+  opposite_enter_price: 1.5
+  main_exit_price: 1.5
+  opposite_exit_price: 1.5
+  gain: 1.5
+
+two:
+  main: MyString
+  opposite: MyString
+  start: 2009-09-30 16:31:04
+  stop: 2009-09-30 16:31:04
+  main_shares: 1
+  opposite_shares: 1
+  main_enter_price: 1.5
+  opposite_enter_price: 1.5
+  main_exit_price: 1.5
+  opposite_exit_price: 1.5
+  gain: 1.5

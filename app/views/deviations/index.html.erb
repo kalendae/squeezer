@@ -1,0 +1,32 @@
+<h1>Listing deviations</h1>
+
+<table>
+  <tr>
+    <th>Etf</th>
+    <th>Base</th>
+    <th>Start</th>
+    <th>Stop</th>
+    <th>Base change</th>
+    <th>Etf change</th>
+    <th>Degradation</th>
+  </tr>
+
+<% @deviations.each do |deviation| %>
+  <tr>
+    <td><%=h deviation.etf %></td>
+    <td><%=h deviation.base %></td>
+    <td><%=h deviation.start %></td>
+    <td><%=h deviation.stop %></td>
+    <td><%=h deviation.base_change %></td>
+    <td><%=h deviation.etf_change %></td>
+    <td><%=h deviation.degradation %></td>
+    <td><%= link_to 'Show', deviation %></td>
+    <td><%= link_to 'Edit', edit_deviation_path(deviation) %></td>
+    <td><%= link_to 'Destroy', deviation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New deviation', new_deviation_path %>

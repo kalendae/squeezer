@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ticker: MyString
+  trade_date: 2009-09-30 16:26:19
+  open: 1.5
+  close: 1.5
+  adj_close: 1.5
+
+two:
+  ticker: MyString
+  trade_date: 2009-09-30 16:26:19
+  open: 1.5
+  close: 1.5
+  adj_close: 1.5

@@ -1,0 +1,40 @@
+<h1>Editing deviation</h1>
+
+<% form_for(@deviation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :etf %><br />
+    <%= f.text_field :etf %>
+  </p>
+  <p>
+    <%= f.label :base %><br />
+    <%= f.text_field :base %>
+  </p>
+  <p>
+    <%= f.label :start %><br />
+    <%= f.datetime_select :start %>
+  </p>
+  <p>
+    <%= f.label :stop %><br />
+    <%= f.datetime_select :stop %>
+  </p>
+  <p>
+    <%= f.label :base_change %><br />
+    <%= f.text_field :base_change %>
+  </p>
+  <p>
+    <%= f.label :etf_change %><br />
+    <%= f.text_field :etf_change %>
+  </p>
+  <p>
+    <%= f.label :degradation %><br />
+    <%= f.text_field :degradation %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @deviation %> |
+<%= link_to 'Back', deviations_path %>
